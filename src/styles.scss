@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; overflow-y: scroll; }
+// html, body {
+//     height: 100%; margin: 0; padding: 0; }
+// body { 
+//     font-family: Roboto, "Helvetica Neue", sans-serif; overflow-y: scroll;
+//     overflow-y: scroll;
+//     padding: 0;
+//     margin: 0;
+// }
+
+.app-toolbar {
+    position: fixed;
+    position: -webkit-sticky; /* For macOS/iOS Safari */
+    top: 0; /* Sets the sticky toolbar to be on top */
+    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+}
+
+mat-card {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+
+
+a:link { color: #8ab4f8; }
+
+/* visited link */
+a:visited { color: #8ab4f8; }
+
+/* mouse over link */
+a:hover { color: #8ab4f8; }
+
+/* selected link */
+a:active { color: #8ab4f8; }
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: rgba(255,255,255,0.7)
+}

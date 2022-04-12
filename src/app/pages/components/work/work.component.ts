@@ -24,31 +24,31 @@ export class WorkComponent {
     workList: WorkExperience[] = [
       {
         employer: 'CANARIE',
-        jobTitle: 'Fullstack Software Developer',
+        jobTitle: 'Full Stack Software Developer',
         tags: [''],
         description: 'Led the work to modernize the existing technology stack by setting up CD/CI and Docker/Kubernetes',
-        timeline: '2019-Present'
+        timeline: 'Sept 2019-Present'
       },
       {
         employer: 'The Land Between',
-        jobTitle: 'Fullstack Software Developer',
+        jobTitle: 'Full Stack Software Developer',
         tags: ['node.js', 'express.js', 'mongodb', 'mongoose', 'Angular', 'android', 'ios'],
         description: 'Made an android and ios app for reporting turtle sightings to researchers across Ontario.',
-        timeline: '2018'
+        timeline: 'Dec 2018 - Sept 2019'
       },
       {
         employer: 'Georgian Bay Turtle Hospital',
-        jobTitle: 'Fullstack Software Developer',
+        jobTitle: 'Full Stack Software Developer',
         tags: [],
         description: 'Created data collection software to aid in data collection for researchers in the field.',
-        timeline: '2017'
+        timeline: 'May 2018 - August 2018'
       },
       {
         employer: 'Scales Nature Park',
-        jobTitle: 'Fullstack Software Developer',
+        jobTitle: 'Full Stack Software Developer',
         tags: [],
         description: 'Created custom software to aid in the tracking of events booked at the nature park.',
-        timeline: '2016'
+        timeline: 'May 2017 - August 2018'
       }
     ];
 }

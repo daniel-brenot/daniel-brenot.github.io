@@ -13,7 +13,7 @@
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="https://www.linkedin.com/in/daniel-brenot-8624a6102/"><img src="/assets/icon/linkedin.svg" class="icons"></a>
                 <br><br>
-            <button mat-raised-button color="primary">Download My Resume&nbsp; <mat-icon>cloud_download</mat-icon></button>
+                <a download href="/assets/documents/Daniel Brenot Resume - 2022.pdf"><button mat-raised-button color="primary">Download My Resume&nbsp; <mat-icon>cloud_download</mat-icon></button></a>
             </div>
         </div>
         
@@ -30,11 +30,17 @@
 <br>
 
 <h1>Here's what I can do for you.</h1>
+<h2>And what I enjoy doing.</h2>
 
 <div fxLayout="row wrap" fxLayoutGap="16px grid">
     <div fxFlex="25%" fxLayoutAlign="stretch" fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let highlight of highlights">
         <mat-card class="mat-elevation-z4">
-            <mat-card-title>{{highlight.title}}</mat-card-title>
+            <mat-card-header>
+                <mat-card-title>{{highlight.title}}</mat-card-title>
+                <mat-card-subtitle>{{highlight.subtitle}}</mat-card-subtitle>
+            </mat-card-header>
+            <div class="card-divider"></div>
+            <!-- <img mat-card-image src="/assets/images/highlights/{{highlight.title}}.png"> -->
             <mat-card-content>
                 {{highlight.description}}
             </mat-card-content>

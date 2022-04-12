@@ -1,5 +1,23 @@
 <h1>What I know</h1>
 <h2>Always learning. always growing.</h2>
+
+<div fxLayout="row wrap" fxLayoutGap="16px grid">
+    <div fxFlex="25%" fxLayoutAlign="stretch" fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let skill of skills">
+        <mat-card class="mat-elevation-z4">
+            <mat-card-header>
+                <div mat-card-avatar style="background-image: url('/assets/images/skills/{{skill.name.replace(a, b)}}.png');background-size: cover;"></div>
+                <mat-card-title>{{skill.name}}</mat-card-title>
+              </mat-card-header>
+            <mat-card-content>
+                <ul>
+                    <li *ngFor="let ability of skill.abilities">{{ability}}</li>
+                </ul>
+            </mat-card-content>
+        </mat-card>
+    </div>
+    
+</div>
+
 <div fxLayout="row wrap" fxLayoutGap="16px grid">
     <div fxFlex="25%" fxLayoutAlign="stretch" fxFlex.xs="100%" fxFlex.sm="50%" *ngFor="let language of languages">
         <mat-card class="mat-elevation-z4">

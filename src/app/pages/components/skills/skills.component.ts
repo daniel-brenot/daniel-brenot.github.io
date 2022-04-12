@@ -17,7 +17,7 @@ interface Skill {
     /** Name of the skill */
     name: string;
     /** Description of the usefullness of the skill */
-    description: string;
+    abilities: string[];
 }
 
 @Component({
@@ -26,6 +26,10 @@ interface Skill {
     styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent {
+
+    a = '/';
+    b = '-'
+
     languages: Language[] = [
         {
             name: 'Rust',
@@ -50,7 +54,8 @@ export class SkillsComponent {
             level: 7,
             proficiency: 10,
             abilities: [
-                'Can create node.js programs with express.js for web API\'s'
+                'Can create node.js programs with express.js for web API\'s',
+                'Can maintain older SPA\'s made with angular.js or other pure js libraries'
             ]
         },
         {
@@ -68,12 +73,38 @@ export class SkillsComponent {
         {
             type: 'other',
             name: 'Docker',
-            description: 'Able to create dockerfiles used in building container images.'
+            abilities: [
+                'Able to create dockerfiles used in building container images.',
+                'Can utilize multistage builds to ensure container images are as slim as possible for deployments.',
+                'Know how to utilize Harbor to scan built images for vulnerabilities such as the Log4J vulnerability.'
+            ]
         },
         {
             type: 'other',
-            name: 'CI/CD',
-            description: 'Able to set up continuous pipelines for testing, security scanning and linting of code in github, gitlab, jenkins or other git hosted solutions.'
+            name: 'Kubernetes',
+            abilities: [
+                'Can create helmcharts to define how an application should scale in the cloud.',
+                'Can use Rancher to manage kubernetes deployments.'
+            ]
+        },
+        {
+            type: 'other',
+            name: 'CD/CI Integration',
+            abilities: [
+                'Able to set up continuous pipelines for testing.',
+                'Can create security scanning and linting tasks to catch commmon vulnerabilities automatically.',
+                'Able to set up automatic merge requests to update dependencies.',
+                'Versatile with github, gitlab, jenkins and other CD solutions.'
+            ]
+        },
+        {
+            type: 'other',
+            name: 'Linux',
+            abilities: [
+                'Know best practices for file permissions to ensure system is secure.',
+                'Can use different package managers to install software for specific distributions.',
+                'Able to create shell scripts for managing system resources.',
+            ]
         },
     ];
 }

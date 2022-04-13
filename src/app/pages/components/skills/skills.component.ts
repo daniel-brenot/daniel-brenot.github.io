@@ -89,7 +89,7 @@ export class SkillsComponent {
         },
         {
             type: 'other',
-            name: 'CD/CI Integration',
+            name: 'CD/CI',
             abilities: [
                 'Able to set up continuous pipelines for testing.',
                 'Can create security scanning and linting tasks to catch commmon vulnerabilities automatically.',

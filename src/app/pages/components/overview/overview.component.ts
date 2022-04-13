@@ -20,7 +20,7 @@ export class OverviewComponent {
   highlights: Highlight[] = [
     {
       title: 'Systems-Level Programming',
-      subtitle: 'But can it go faster?',
+      subtitle: 'But can it go <i>faster?</i>',
       description: 'I can make high-speed low-latency applications using multiple combinations of non-locking data structures to ensure your software does what you need, when you need it.'
     },
     {

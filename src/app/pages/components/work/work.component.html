@@ -9,7 +9,11 @@
                 <mat-card-subtitle>{{job.jobTitle}}</mat-card-subtitle>
                 <mat-card-subtitle>{{job.timeline}}</mat-card-subtitle>
             </mat-card-header>
-            <mat-card-content>{{job.description}}</mat-card-content>
+            <mat-card-content>
+                <ul>
+                    <li *ngFor="let description of job.descriptions">{{description}}</li>
+                </ul>
+            </mat-card-content>
         </mat-card>
     </div>
 </div>

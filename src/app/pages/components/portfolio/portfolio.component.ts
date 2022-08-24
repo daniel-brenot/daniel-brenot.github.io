@@ -25,7 +25,7 @@ export class PortfolioComponent {
   projects: Project[] = [
     {
       name: 'rust-algotrader',
-      sourceCodeLink: '',
+      sourceCodeLink: 'https://github.com/MikeECunningham/rust-trader',
       description: 'A rust project for trading securities on multiple cryptocurrency exchanges by performing analysis on orderbook data and making informed high-speed low-latency transactions.',
       contribution: 'Kept latency extremely low (<10ms latency and processing time) and refactored the application multiple times for higher reliability for critical circumstances.',
       languages: ['rust'],

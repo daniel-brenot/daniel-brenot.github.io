@@ -32,7 +32,7 @@ export class OverviewComponent {
     {
       title: 'CD/CI Intgration',
       subtitle: 'Making others happy makes me happy.',
-      description: 'CD/CI pipelines with different systems such as gihub, gitlab and jenkins are a great way to help your team focus on writing code without worrying about manually deploying code to the cloud, or breaking existing deployments.'
+      description: 'CD/CI pipelines with different systems such as github, gitlab and jenkins are a great way to help your team focus on writing code without worrying about manually deploying code to the cloud, or breaking existing deployments.'
     },
     {
       title: 'Cross-Platform Development',
